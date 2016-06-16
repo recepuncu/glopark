@@ -21,5 +21,8 @@
     <allow-intent href="https://*/*" />
 	
 	<plugin name="cordova-plugin-inappbrowser" source="npm" />
+	<plugin name="cordova-plugin-statusbar" source="npm" />
+	
+	<preference name="StatusBarBackgroundColor" value="#4caf50" />
 	
 </widget>
