@@ -22,10 +22,9 @@ var app = {
     },
 
     receivedEvent: function(id) {
-        if(id=='deviceready'){			
-			alert('ref go');
-			window.open('http://plus.glopark.com/', '_self', 'location=no,zoom=no,toolbar=no,enableViewportScale=no');
-			alert('to');
+        if(id=='deviceready'){
+			var ref = window.open('http://plus.glopark.com/', '_self', 'location=no,zoom=no,toolbar=no');
+			ref.addEventListener('loadstart', function() { });
 		}
     }
 };
