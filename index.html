@@ -6,6 +6,10 @@
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript">
+function alertDismissed() {
+    // do something
+}
+
 var app = {
 
     initialize: function() {
@@ -22,7 +26,12 @@ var app = {
 
     receivedEvent: function(id) {
         if(id=='deviceready'){
-			window.location = "http://plus.glopark.com/";
+			navigator.notification.alert(
+				'You are the winner!',  // message
+				alertDismissed,         // callback
+				'Game Over',            // title
+				'Done'                  // buttonName
+			);
 		}
     }
 };
