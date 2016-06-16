@@ -21,4 +21,11 @@
 	
 	<preference name="StatusBarBackgroundColor" value="#4caf50" />
 	
+	<icon src="res/icons/androidicon-36-ldpi.png" platform="android" qualifier="ldpi" />
+	<icon src="res/icons/androidicon-48-mdpi.png" platform="android" qualifier="mdpi" />
+	<icon src="res/icons/androidicon-72-hdpi.png" platform="android" qualifier="hdpi" />
+	<icon src="res/icons/androidicon-96-xhdpi.png" platform="android" qualifier="xhdpi" />
+	<icon src="res/icons/androidicon-144-xxhdpi.png" platform="android" qualifier="xxhdpi" />
+	<icon src="res/icons/androidfr-icon-192-xxxhdpi.png" platform="android" qualifier="fr-xxhdpi" />	
+	
 </widget>
