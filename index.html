@@ -25,7 +25,7 @@ var app = {
         if(id=='deviceready'){			
 			if (typeof navigator !== "undefined" && navigator.app) {
 				//navigator.app.loadUrl('http://www.google.com/', {openExternal: true});
-				window.top.location = "http://plus.glopark.com/";
+				window.open("http://plus.glopark.com/", "_self");
 			} else {
 				window.open("http://plus.glopark.com/", "_self");
 			}
