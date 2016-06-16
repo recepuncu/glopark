@@ -15,6 +15,7 @@
         Recep Uncu
     </author>
 	
+	<plugin name="cordova-plugin-device" source="npm" />
 	<plugin name="cordova-plugin-inappbrowser" source="npm" />
 	<plugin name="cordova-plugin-statusbar" source="npm" />
 	
