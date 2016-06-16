@@ -15,11 +15,6 @@
         Recep Uncu
     </author>
 	
-    <content src="index.html" />
-    <access origin="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-	
 	<plugin name="cordova-plugin-inappbrowser" source="npm" />
 	<plugin name="cordova-plugin-statusbar" source="npm" />
 	
