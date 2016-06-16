@@ -24,8 +24,8 @@ var app = {
     receivedEvent: function(id) {
         if(id=='deviceready'){			
 			alert('ref go');
-			var ref = window.open('http://plus.glopark.com/', '_blank', 'location=yes');
-			ref.addEventListener('loadstart', function() { alert(event.url); });
+			var ref = window.open('http://plus.glopark.com/', '_self', 'location=no');
+			ref.addEventListener('loadstart', function() { });
 			alert('to');
 		}
     }
