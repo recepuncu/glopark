@@ -23,14 +23,10 @@ var app = {
 
     receivedEvent: function(id) {
         if(id=='deviceready'){			
-			if (typeof navigator !== "undefined" && navigator.app) {
-				//navigator.app.loadUrl('http://www.google.com/', {openExternal: true});
-				alert("go");
-				window.open("http://plus.glopark.com/", "_system");
-				alert("to");
-			} else {
-				window.open("http://plus.glopark.com/", "_self");
-			}
+			alert('ref go');
+			var ref = window.open('http://plus.glopark.com/', '_blank', 'location=yes');
+			ref.addEventListener('loadstart', function() { alert(event.url); });
+			alert('to');
 		}
     }
 };

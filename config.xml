@@ -14,9 +14,12 @@
     <author href="http://www.recepuncu.com" email="recepuncu@gmail.com">
         Recep Uncu
     </author>
+	
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+	
+	<plugin name="org.li8.inappbrowser" spec="0.1" source="pgb" />
 	
 </widget>
