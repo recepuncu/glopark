@@ -24,11 +24,10 @@ var app = {
     receivedEvent: function(id) {
         if(id=='deviceready'){			
 			if (typeof navigator !== "undefined" && navigator.app) {
-				alert('Mobile device.');
-				navigator.app.loadUrl('http://www.google.com/', {openExternal: true});
+				//navigator.app.loadUrl('http://www.google.com/', {openExternal: true});
+				window.top.location = "http://plus.glopark.com/";
 			} else {
-				alert('Possible web browser.');
-				window.open("http://www.google.com/", "_self");
+				window.open("http://plus.glopark.com/", "_self");
 			}
 		}
     }
